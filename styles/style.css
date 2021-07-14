@@ -1,0 +1,169 @@
+/* font poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF; 
+}
+/*................
+     Top Banner 
+.................*/
+
+.banner-container{
+    display: flex;
+    background-color: #2D25A0;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 30px;   
+}
+.banner-title{
+    size: 64px;
+    color: white;
+    font-weight: 700;
+
+}
+.button{
+    background-color:#E02C6D;
+    display: inline;
+    color:white;
+    padding: 10px 24px 10px;
+    size: 16px;
+    font-weight: 500;
+    transition: 2s;
+}
+
+h2{
+    font-size: 28px;
+}
+
+.button:hover{
+    background-color:lightslategray;
+    color:orange;    
+}
+.button a{
+    text-decoration: none;
+    color: white;
+    size: 16px;
+}
+
+.abnner-arrw{
+    margin-left: 4px;
+    padding-left: 4px;
+}
+
+.banner-image{
+    width: 556px;
+    height: 436px;
+}
+
+/*.................
+        Blogd 
+ ..................*/
+
+ main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+ .blogs{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 70px; 
+    grid-row-gap: 45px; 
+    grid-column-gap: 30px; 
+}
+.blog{
+    padding: 15px;
+    width: 330px;
+    height: 456px;
+    box-shadow: 10px 10px 30px grey;
+}
+
+.blogs img{
+    height: 256px;
+    width: 330px;
+    
+}
+
+/*..................
+        Footer 
+...................*/
+footer{
+    margin: 40px 480px 0;
+   
+}
+
+.social-icon{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+footer img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+
+.social-icon a i{
+    padding: 0 7px 0;
+}
+footer div p{
+    text-align:center; 
+    vertical-align: middle; 
+}
+
+/* .................
+     Media Queries
+   ................*/
+
+/* Mobile devices */
+@media only screen and (max-width: 688px){
+    .banner-container{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            padding: 0px 0px;
+            flex-direction: column;
+
+    }
+    .banner-heading{
+        padding: 50px 30px;
+    }
+    .banner-image {
+        width: 369px;
+        height: 300px;
+        padding: 50px 10px;
+    }
+    .blogs{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    audio{
+        margin: -10px;
+        padding: -10px;
+    }
+    footer {
+        margin: 40px 6px 0;
+    }
+       
+}
+
+/* Tablet devices  */
+
+@media only screen and (min-width :688px) and (max-width: 992px){
+    .blogs{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+     footer {
+        margin: 40px 6px 0;
+    }
+       
+}
+
